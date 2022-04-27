@@ -48,12 +48,8 @@ function rootReducer (state= initialState, action){
 
      
   case 'FILTER_CREATED': 
-  const allBreeds2 = state.backUpBreeds
-  const createdFilter = action.payload === 'created' ? allBreeds2.filter(e => e.createdInDb) : allBreeds2.filter(e => !e.createdInDb)
-  return {
-      ...state,
-      breeds: action.payload === 'all' ? state.backUpBreeds : createdFilter
-  }
+  const statusFiltered2 = action.payload === 'created'? state.backUpBreeds.filter(el => el.createdInDb) : state.backUpBreeds.filter(el => !el.createdInDb)
+  return {...state, breeds: action.payload === 'All'? state.backUpBreeds : statusFiltered2} 
   
   case 'ORDER_BY_NAME':
    let sortedArr1 = action.payload === 'asc' ? state.breeds.sort(function (a, b){

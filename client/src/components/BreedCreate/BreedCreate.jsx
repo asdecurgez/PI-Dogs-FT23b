@@ -51,8 +51,9 @@ export default function BreedCreate(){
     function handleSelect(e){
         setInput({
             ...input,
-            temperament: [...input.temperament, e.target.value],
+            temperament: [...new Set([...input.temperament, e.target.value])],
         })
+
     }
 
     function handleSubmit(e){
@@ -92,6 +93,7 @@ export default function BreedCreate(){
                         name= 'name'
                         onChange={(e)=>handleChange(e)}
                     />
+
                 </div>
                 <div>
                     <label>Image:</label>
@@ -160,17 +162,17 @@ export default function BreedCreate(){
                         <option value={temp.name}>{temp.name}</option>
                     ))}
                 </select>
-                <button type='submit' onSubmit={(e) => handleSubmit(e)}>Create dog!</button>
+                <button className={style.createbtn} type='submit' onSubmit={(e) => handleSubmit(e)}>Create dog!</button>
                 </div>
-            </form>
-            {input.temperament.map(el =>
+                </form>
+                {input.temperament.map(el =>
                 <div className='divTemp'>
                     <p>{el}</p>
                     <button className='botonX' onClick={() => handleDeleteTemperaments(el)}>X</button>
                 </div>    
                 )}
-
             </section>
+            
         </div>
     )
 

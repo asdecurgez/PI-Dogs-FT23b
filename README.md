@@ -18,7 +18,7 @@ SPA (Single Page Application) utilizando React para el Front End y Redux como st
 - Formulario controlado para que el usuario tenga la posibilidad de crear una raza adicional.
 - Filtros por temperamentos y origen de las razas (existentes desde la API y creadas por los usuarios).
 - Acceso a los detalles de cada raza (nombre, imagen, años de vida, peso, altura y temperamentos).
-- 
+
 ## Instrucciones para ejecutar la SPA
 
 1.Clonar el repositorio.

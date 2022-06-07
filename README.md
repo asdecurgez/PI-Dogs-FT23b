@@ -21,12 +21,12 @@ SPA (Single Page Application) utilizando React para el Front End y Redux como st
 
 ## Instrucciones para ejecutar la SPA
 
-1.Clonar el repositorio.
-2.Abrir el proyecto en la consola.
-3.En la carpeta api ejecutar npm install
-4.En la carpeta Client ejecutar npm install
-5.En la ruta api/src/db, completar para la base de datos de Postgres: DB_USER (usuario), DB_PASSWORD (password), DB_HOST (localhost) y DB_NAME (nombre base de datos).
-6.En las rutas api/src/Controllers/Breeds.js y api/src/Controllers/Breeds.js reemplazar URL_APIKEY por la url más clave otorgada por The Dog API (https://thedogapi.com/).
-7.En la carpeta api ejecutar npm start.
-8.En la carpeta Client ejecutar npm start.
-9.Abrir http: //localhost:3001 para visualizar la app en el navegador.
+1. Clonar el repositorio.
+2. Abrir el proyecto en la consola.
+3. En la carpeta api ejecutar npm install
+4. En la carpeta Client ejecutar npm install
+5. En la ruta api/src/db, completar para la base de datos de Postgres: DB_USER (usuario), DB_PASSWORD (password), DB_HOST (localhost) y DB_NAME (nombre base de datos). 
+6. En las rutas api/src/Controllers/Breeds.js y api/src/Controllers/Breeds.js reemplazar URL_APIKEY por la url más clave otorgada por The Dog API (https://thedogapi.com/).
+7. En la carpeta api ejecutar npm start.
+8. En la carpeta Client ejecutar npm start.
+9. Abrir http: //localhost:3001 para visualizar la app en el navegador.
